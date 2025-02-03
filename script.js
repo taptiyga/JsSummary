@@ -21,7 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 })
 
-
+function greet() {
+    console.log("Hello!");
+}
 
 
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Трехуровневый Аккордеон</title>
+    <title>Шпаргалка по JavaScript</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -260,6 +260,108 @@
             <!-- const конец-->
         </div>
         <!-- ПЕРЕМЕННЫЕ конец -->
+        <!-- ТИПЫ ДАННЫХ -->
+        <div class="accordion-header level-1">ТИПЫ ДАННЫХ</div>
+        <div class="accordion-content">
+            <!-- Примитивные типы данных -->
+            <div class="accordion-header level-2">Примитивные типы данных</div>
+            <div class="accordion-content">
+                <!-- Number -->
+                <div class="accordion-header level-3">Number</div>
+                <div class="accordion-content">
+                    <p>Представляет числовые значения, как целые, так и дробные.</p>
+                    <p>let num = 42;<br>
+                        let pi = 3.14;</p>
+                </div>
+                <!-- Number конец-->
+                <!-- Boolean -->
+                <div class="accordion-header level-3">Boolean</div>
+                <div class="accordion-content">
+                    <p>Представляет логические значения: true или false.</p>
+                    <p>let isActive = true;<br>
+                        let isComplete = false;</p>
+                </div>
+                <!-- Boolean конец-->
+                <!-- Null -->
+                <div class="accordion-header level-3">Null</div>
+                <div class="accordion-content">
+                    <p>Представляет намеренное отсутствие значения. Это специальное значение, которое указывает на
+                        "ничто".</p>
+                    <p>let y = null;</p>
+                </div>
+                <!-- Null конец-->
+                <!-- Symbol (введен в ES6): -->
+                <div class="accordion-header level-3">Symbol (введен в ES6):</div>
+                <div class="accordion-content">
+                    <p>Представляет уникальные и неизменяемые значения, которые могут быть использованы в качестве
+                        идентификаторов для свойств
+                        объектов.</p>
+                    <p>const uniqueId = Symbol('id');</p>
+                </div>
+                <!-- Symbol (введен в ES6): конец-->
+                <!-- BigInt (введен в ES11): -->
+                <div class="accordion-header level-3">BigInt (введен в ES11):</div>
+                <div class="accordion-content">
+                    <p>Представляет целые числа произвольной длины. Используется для работы с числами, которые превышают
+                        пределы типа Number.</p>
+                    <p>const bigNumber = BigInt(123456789012345678901234567890);</p>
+                </div>
+                <!-- BigInt (введен в ES11): конец-->
+            </div>
+            <!-- Примитивные типы данных конец-->
+            <!-- Сложные типы данных -->
+            <div class="accordion-header level-2">Сложные типы данны</div>
+            <div class="accordion-content">
+                <!-- Object: -->
+                <div class="accordion-header level-3">Object:</div>
+                <div class="accordion-content">
+                    <p>Представляет коллекцию свойств, где каждое свойство имеет ключ и значение. Объекты могут
+                        содержать любые типы данных,
+                        включая другие объекты.</p>
+                    <p>
+                        let person = {<br>
+                        &emsp;name: "Alice",<br>
+                        &emsp;age: 25,<br>
+                        &emsp;isStudent: false<br>
+                        };
+                    </p>
+                </div>
+                <!-- Object: конец-->
+                <!-- Array: -->
+                <div class="accordion-header level-3">Array:</div>
+                <div class="accordion-content">
+                    <p>Специальный тип объекта, который представляет упорядоченные коллекции значений. Элементы массива
+                        могут быть любого типа.</p>
+                    <p>let fruits = ["apple", "banana", "cherry"];</p>
+                </div>
+                <!-- Array: конец-->
+                <!-- Function: -->
+                <div class="accordion-header level-3">Function:</div>
+                <div class="accordion-content">
+                    <p>Функции в JavaScript также являются объектами. Они могут быть присвоены переменным, переданы как
+                        аргументы и возвращены
+                        из других функций.</p>
+                    <p>function greet() {<br>
+                        &emsp;console.log("Hello!");<br>
+                        }</p>
+                </div>
+                <!-- Function: конец-->
+            </div>
+            <!-- Сложные типы данных конец-->
+            <!-- Рекомендации по использованию типов данных -->
+            <div class="accordion-header level-2">Рекомендации по использованию типов данных</div>
+            <div class="accordion-content">
+                <p>Используйте примитивные типы для простых значений, таких как числа и строки.<br>
+
+                    Используйте объекты и массивы для хранения более сложных структур данных.<br>
+
+                    При работе с большими числами, которые выходят за пределы Number, используйте BigInt.<br>
+
+                    Для уникальных идентификаторов используйте Symbol.</p>
+            </div>
+            <!-- Рекомендации по использованию типов данных конец-->
+        </div>
+        <!-- ТИПЫ ДАННЫХ конец -->
     </div>
     <script src="script.js"></script>
 </body>
